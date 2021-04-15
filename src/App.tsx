@@ -63,7 +63,7 @@ const App:any = (props:Props) => {
           : !props.name && state.isSearching ?
             <div className="failed-connect">
               <Spinner animation="border"/>
-              <p>If this take to long you might have no internet or wrongly written pokemon's name!</p>
+              <p>If this take too long you might have no internet or have wrongly written the pokemon's name!</p>
               <Button id="clear-button" onClick={clearAll} variant="success">Try Again!</Button>
             </div>
           :  <Search
