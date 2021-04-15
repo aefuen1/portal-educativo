@@ -29,8 +29,6 @@ const defaultState = {
 
 function reducer (state:defState = defaultState, {type, payload}:action ) {
     if(type === "MAKE_SEARCH"){
-        console.log("de nuevo");
-        console.log(payload.forms[0].name);
         return{
             ...state,
             name: payload.forms[0].name,

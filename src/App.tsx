@@ -40,7 +40,7 @@ const App:any = (props:Props) => {
     });
   }
   useEffect(()=>{
-    if(!props.name && state.isSearching){
+    if(!props.name && state.isSearching && !state.timer){
       setTimeout(()=>{
         setState({
           timer:true,
