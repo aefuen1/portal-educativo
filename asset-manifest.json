@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/https//aefuen1.github.io/portal-educativo/static/css/main.5e1ddd7f.chunk.css",
+    "main.js": "/https//aefuen1.github.io/portal-educativo/static/js/main.bb56fc56.chunk.js",
+    "main.js.map": "/https//aefuen1.github.io/portal-educativo/static/js/main.bb56fc56.chunk.js.map",
+    "runtime-main.js": "/https//aefuen1.github.io/portal-educativo/static/js/runtime-main.852f08cc.js",
+    "runtime-main.js.map": "/https//aefuen1.github.io/portal-educativo/static/js/runtime-main.852f08cc.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/https//aefuen1.github.io/portal-educativo/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.278d38a9.chunk.js": "/https//aefuen1.github.io/portal-educativo/static/js/2.278d38a9.chunk.js",
+    "static/js/2.278d38a9.chunk.js.map": "/https//aefuen1.github.io/portal-educativo/static/js/2.278d38a9.chunk.js.map",
+    "index.html": "/https//aefuen1.github.io/portal-educativo/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/https//aefuen1.github.io/portal-educativo/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.5e1ddd7f.chunk.css.map": "/https//aefuen1.github.io/portal-educativo/static/css/main.5e1ddd7f.chunk.css.map",
+    "static/js/2.278d38a9.chunk.js.LICENSE.txt": "/https//aefuen1.github.io/portal-educativo/static/js/2.278d38a9.chunk.js.LICENSE.txt",
+    "static/media/App.sass": "/https//aefuen1.github.io/portal-educativo/static/media/4.cb69504b.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.852f08cc.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.278d38a9.chunk.js",
+    "static/css/main.5e1ddd7f.chunk.css",
+    "static/js/main.bb56fc56.chunk.js"
+  ]
+}
