@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portal-educativo/static/css/main.956ff15d.chunk.css",
-    "main.js": "/portal-educativo/static/js/main.58dbe3e9.chunk.js",
-    "main.js.map": "/portal-educativo/static/js/main.58dbe3e9.chunk.js.map",
+    "main.js": "/portal-educativo/static/js/main.d18ddf43.chunk.js",
+    "main.js.map": "/portal-educativo/static/js/main.d18ddf43.chunk.js.map",
     "runtime-main.js": "/portal-educativo/static/js/runtime-main.2e028c35.js",
     "runtime-main.js.map": "/portal-educativo/static/js/runtime-main.2e028c35.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/portal-educativo/static/css/2.4c97ca4f.chunk.css",
@@ -19,6 +19,6 @@
     "static/css/2.4c97ca4f.chunk.css",
     "static/js/2.edbe9c20.chunk.js",
     "static/css/main.956ff15d.chunk.css",
-    "static/js/main.58dbe3e9.chunk.js"
+    "static/js/main.d18ddf43.chunk.js"
   ]
 }
