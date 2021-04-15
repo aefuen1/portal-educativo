@@ -1,10 +1,8 @@
-import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { connect } from 'react-redux';
-import { clear } from '../actionCreators';
 
 interface Props{
-    clearRedux: () => void;
+    clearAll: () => void;
     name:string;
     id:number;
     height:number;
@@ -20,7 +18,7 @@ const Pokemon:any = (props:Props) => {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
     function click(){
-        props.clearRedux();
+        props.clearAll();
     }
     return(
         <section id="pokemon">
@@ -69,9 +67,7 @@ const mapStateToProps = (state:State) =>{
 
 const mapDispatchToProps = (dispatch:any) =>{
     return{
-        clearRedux: () =>{
-            dispatch(clear());
-        }
+        
     };
 }
 

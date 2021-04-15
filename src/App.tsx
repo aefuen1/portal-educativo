@@ -1,11 +1,10 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import { Button, Spinner } from 'react-bootstrap';
 import { connect } from 'react-redux';
 import { clear, fetchPokemon } from './actionCreators';
 import Pokemon from './components/Pokemon';
 import Search from './components/Search';
 import "./css/App.sass";
-import store from './store';
 
 
 interface Props{
@@ -22,7 +21,7 @@ const App:any = (props:Props) => {
     timer:false
   });
 
-  const clearAll = (e:any) => {
+  const clearAll = () => {
     props.clearRedux();
     setState({
       search:"",
@@ -39,19 +38,9 @@ const App:any = (props:Props) => {
       timer:false
     });
   }
-  useEffect(()=>{
-    if(!props.name && state.isSearching && !state.timer){
-      setTimeout(()=>{
-        setState({
-          timer:true,
-          search: state.search,
-          isSearching: state.isSearching
-        });
-      },10000);
-    }
-  });
-  const doc = document.documentElement;
-
+  const passingProps = {
+    clearAll
+  }
   const submitClick = (e:any) => {
     e.preventDefault();
     props.searchPokemon(state.search.trim().toLowerCase());
@@ -68,20 +57,15 @@ const App:any = (props:Props) => {
       <header>
         <h1>PokePlace</h1>
       </header>
-      <main className={`main-container rounded ${doc.clientHeight > doc.scrollHeight ? "change-width":""}`}>
+      <main className={`main-container rounded`}>
         {props.name && state.isSearching?
-            <Pokemon/>
-          : !props.name && state.isSearching  && state.timer ?
+            <Pokemon {...passingProps}/>
+          : !props.name && state.isSearching ?
             <div className="failed-connect">
               <Spinner animation="border"/>
-              <p>Seem's like you have connection problems or you have written the pokemon's name wrong!</p>
+              <p>If this take to long you might have no internet or wrongly written pokemon's name!</p>
               <Button id="clear-button" onClick={clearAll} variant="success">Try Again!</Button>
             </div>
-          : !props.name && state.isSearching && !state.timer ?
-            
-            <Spinner animation="border"/>
-            
-            
           :  <Search
               search={state.search}
               handleSearch={handleSearch}
