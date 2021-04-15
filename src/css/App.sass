@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
+
+$darken-bkg: rgba(0, 0, 0, 0.5)
+$light-bkg: rgba(255, 255, 255, 0.6)
+
+@mixin bkg-mx 
+  position: absolute
+  height: 100%
+  text-align: center
+  width: 100%
+  
+.App
+  @include bkg-mx
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  animation: 25s ease-out infinite bkgimage
+
+header
+  padding: 0rem 0
+  h1
+    color: white
+    font-family: "Montserrat", Verdana
+    margin-top: 0
+    font-size: 4rem
+    font-weight: bold
+footer
+  position: fixed
+  bottom: 0
+  padding: 1rem 0
+  width: 100%
+  a
+    text-decoration: none
+    color: white
+    &:hover
+      text-decoration: underline
+      color: white
+
+.app-child
+  @include bkg-mx
+  background: $darken-bkg
+
+@keyframes bkgimage
+  @for $i from 0 through 5
+    @if $i == 5
+      #{$i * 20%}
+        background-image: url('./images/#{0}.jpg')
+    @else   
+      #{$i * 20%}
+        opacity: 1
+        background-image: url('./images/#{$i}.jpg')
+
+.main-container
+  position: relative
+  width: 60%
+  padding: 1rem
+  margin: auto
+  background-color: $light-bkg
+  form
+    margin-top: 2rem
+    
+#pokemon
+  max-height: 70%
+  font-family: "Lobster Two", "Montserrat", Verdana
+  h2
+    font-size: 3rem
+  button
+    font-weight: bold
+    font-family: "Montserrat",Verdana
